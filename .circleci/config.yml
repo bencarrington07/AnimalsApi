@@ -18,3 +18,7 @@ jobs:
           command: |
             ls -al
             echo '^^^The files in your repo^^^'
+      - run:
+          name: The Third Step
+          command: |
+           dotnet version
