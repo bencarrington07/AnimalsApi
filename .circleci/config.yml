@@ -19,9 +19,9 @@ jobs:
       - run:
           name: Restore project dependencies and tools
           command: dotnet restore AnimalsApi.sln
-#      - run:
-#          name: Build project 
-#          command: dotnet build src\Cfd
+      - run:
+          name: Build project 
+          command: dotnet build AnimalsApi.sln
 #      - run:
 #          name: "Running tests"
 #          command: |
