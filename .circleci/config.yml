@@ -17,6 +17,9 @@ jobs:
       - run:
          command: ls
       - run:
+          name: Install .Net7
+          command: winget install Microsoft.DotNet.AspNetCore.7
+      - run:
           name: Restore project dependencies and tools
           command: dotnet restore AnimalsApi.sln
 #      - run:
