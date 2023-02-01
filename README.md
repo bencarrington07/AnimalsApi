@@ -1,6 +1,8 @@
 # AnimalsApi
 API For gathering facts about animals.
 
+[![CodeFactor](https://www.codefactor.io/repository/github/bencarrington07/animalsapi/badge)](https://www.codefactor.io/repository/github/bencarrington07/animalsapi)
+
 ## Run in Docker!
 ```
 dotnet publish --os linux --arch x64 /t:PublishContainer -c Release .
