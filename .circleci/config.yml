@@ -18,7 +18,7 @@ jobs:
          command: ls
       - run:
           name: Install .Net7
-          command: winget install Microsoft.DotNet.AspNetCore.7
+          command: wget https://dot.net/v1/dotnet-install.sh && chmod +x ./dotnet-install.sh && sudo ./dotnet-install.sh
       - run:
           name: Restore project dependencies and tools
           command: dotnet restore AnimalsApi.sln
