@@ -17,4 +17,3 @@ public class AnimalsController : ControllerBase
     [HttpGet(Name = "GetAnimals")]
     public IEnumerable<string> Get() => Enumerable.Range(1, 5).Select(index => "Random");
 }
-
