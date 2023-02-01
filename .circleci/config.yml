@@ -15,7 +15,7 @@ jobs:
     steps:
       - checkout
       - run:
-         command: ls -al
+         command: ls
 #      - run:
 #          name: Restore project dependencies and tools
 #          command: dotnet restore src\Cfd
