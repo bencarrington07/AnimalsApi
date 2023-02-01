@@ -2,6 +2,7 @@
 API For gathering facts about animals.
 
 [![CodeFactor](https://www.codefactor.io/repository/github/bencarrington07/animalsapi/badge)](https://www.codefactor.io/repository/github/bencarrington07/animalsapi)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/bencarrington07/AnimalsApi/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/bencarrington07/AnimalsApi/tree/main)
 
 ## Run in Docker!
 ```
