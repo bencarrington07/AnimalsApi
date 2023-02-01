@@ -17,11 +17,6 @@ jobs:
       - run:
          command: ls
       - run:
-          name: Install .Net7
-          command: |
-            Invoke-WebRequest -Uri https://dot.net/v1/dotnet-install.ps1 -OutFile "$env:temp/dotnet-install.ps1"; powershell -executionpolicy bypass "$env:temp/dotnet-install.ps1"
-
-      - run:
           name: Restore project dependencies and tools
           command: dotnet restore AnimalsApi.sln
 #      - run:
