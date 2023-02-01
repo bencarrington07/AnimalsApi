@@ -16,9 +16,9 @@ jobs:
       - checkout
       - run:
          command: ls
-#      - run:
-#          name: Restore project dependencies and tools
-#          command: dotnet restore src\Cfd
+      - run:
+          name: Restore project dependencies and tools
+          command: dotnet restore AnimalsApi.sln
 #      - run:
 #          name: Build project 
 #          command: dotnet build src\Cfd
