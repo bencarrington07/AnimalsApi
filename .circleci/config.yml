@@ -1,24 +1,34 @@
 version: 2.1
+
+orbs:
+  win: circleci/windows@5.0
+
+workflows:
+  build-and-unittest:
+    jobs:
+      - build-and-test
 jobs:
-  build:
-    docker:
-      - image: cimg/base:2021.04
-        auth:
-          username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+  build-and-test:
+    executor:
+      name: win/default
+      version: edge
     steps:
       - checkout
       - run:
-          name: The First Step
-          command: |
-            echo 'Hello World!'
-            echo 'This is the delivery pipeline'
-      - run:
-          name: The Second Step
-          command: |
-            ls -al
-            echo '^^^The files in your repo^^^'
-      - run:
-          name: The Third Step
-          command: |
-           dotnet version
+         command: ls -al
+#      - run:
+#          name: Restore project dependencies and tools
+#          command: dotnet restore src\Cfd
+#      - run:
+#          name: Build project 
+#          command: dotnet build src\Cfd
+#      - run:
+#          name: "Running tests"
+#          command: |
+#            mkdir test-results
+#            dotnet test ./Cfd.Tests --logger:"junit;LogFilePath=test-results/dotnet-sample-cfd/xunit.xml"
+#      - store_test_results:
+#          path: ./Cfd.Tests/test-results
+#      - store_artifacts:
+#          path: ./Cfd.Tests/test-results
+  
