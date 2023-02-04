@@ -27,6 +27,7 @@ jobs:
           command: |
             mkdir test-results
             dotnet test ./AnimalsApi.Tests --logger:trx
+            ls
       - store_test_results:
           path: ./AnimalsApi.Tests/test-results
       - store_artifacts:
