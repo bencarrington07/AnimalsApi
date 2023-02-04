@@ -29,7 +29,7 @@ jobs:
             dotnet test ./AnimalsApi.Tests --logger:trx
             ls
       - store_test_results:
-          path: ./AnimalsApi.Tests/test-results
+          path: ./AnimalsApi.Tests/TestResults
       - store_artifacts:
-          path: ./AnimalsApi.Tests/test-results
+          path: ./AnimalsApi.Tests/TestResults
   
