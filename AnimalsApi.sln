@@ -8,7 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E1D78E8-8075-4510-8024-4924F2690C09}"
 	ProjectSection(SolutionItems) = preProject
 		Dockerfile.txt = Dockerfile.txt
+		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalsApi.Tests", "AnimalsApi.Tests\AnimalsApi.Tests.csproj", "{04ACD325-AE09-411C-AE56-AD43047395EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +23,10 @@ Global
 		{944A180C-2E1D-45CC-A858-FDE8DAB9C9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{944A180C-2E1D-45CC-A858-FDE8DAB9C9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{944A180C-2E1D-45CC-A858-FDE8DAB9C9B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04ACD325-AE09-411C-AE56-AD43047395EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04ACD325-AE09-411C-AE56-AD43047395EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04ACD325-AE09-411C-AE56-AD43047395EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04ACD325-AE09-411C-AE56-AD43047395EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

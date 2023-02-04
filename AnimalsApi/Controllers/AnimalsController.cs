@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace AnimalsApi.Controllers;
 
@@ -7,9 +8,9 @@ namespace AnimalsApi.Controllers;
 [Route("[controller]")]
 public class AnimalsController : ControllerBase
 {
-	private readonly ILogger<AnimalsController> _logger;
+	private readonly ILogger _logger;
 
-	public AnimalsController(ILogger<AnimalsController> logger)
+	public AnimalsController(ILogger logger)
 	{
 		_logger = logger;
 	}

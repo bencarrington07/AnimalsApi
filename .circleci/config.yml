@@ -22,13 +22,13 @@ jobs:
       - run:
           name: Build project 
           command: dotnet build AnimalsApi.sln
-#      - run:
-#          name: "Running tests"
-#          command: |
-#            mkdir test-results
-#            dotnet test ./Cfd.Tests --logger:"junit;LogFilePath=test-results/dotnet-sample-cfd/xunit.xml"
-#      - store_test_results:
-#          path: ./Cfd.Tests/test-results
-#      - store_artifacts:
-#          path: ./Cfd.Tests/test-results
+      - run:
+          name: "Running tests"
+          command: |
+            mkdir test-results
+            dotnet test ./AnimalsApi.Tests --logger:trx
+      - store_test_results:
+          path: ./AnimalsApi.Tests/test-results
+      - store_artifacts:
+          path: ./AnimalsApi.Tests/test-results
   
